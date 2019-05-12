@@ -74,7 +74,7 @@ class Map extends Component {
 
     render() {
         return (
-            <Fragment>
+            process.env.REACT_APP_MAP_API_TOKEN ? <Fragment>
                 <UsersList users={this.props.users} removeUser={this.handleRemoveUser} />
                 <ToastContainer />
                 <Modal
@@ -117,7 +117,7 @@ class Map extends Component {
                         })
                         }
                 </MapGL>
-            </Fragment>
+            </Fragment> : <p>Missing API TOKEN</p>
         );
     }
 }
