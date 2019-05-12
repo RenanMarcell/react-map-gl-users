@@ -1,0 +1,49 @@
+#user-list-container {
+    background-color: white;
+    border-right: 1px solid #ccc;
+    height: 80vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2%;
+    min-width: 300px;
+    z-index: 1;
+    font-family: sans-serif;
+}
+
+.user-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-item {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 15px 0 15px 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    min-width: 50%;
+}
+
+.user-image {
+    height: 50px;
+    border-radius: 50%;
+}
+
+.user-remove {
+    background-color: red;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+}
